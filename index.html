@@ -22,7 +22,7 @@
       }
 
       body {
-        height: 100vh;
+        background-color: #43454d;
       }
 
       .author-info {
@@ -37,6 +37,7 @@
       }
     </style>
   </head>
+
   <body>
     <!-- 
 
@@ -126,12 +127,19 @@
       
       $8,098
      -->
+    <header
+      class="w-full border border-b-neutral-400 h-[70px] flex flex-row space-between items-center"
+    >
+      <img class="h-[40px]" src="./resources/hbank-logo.svg" alt="hbank-logo" />
 
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div>
+      <div class="flex flex-row gap-3 items-center">
+        <img src="./resources/avatar.png" alt="" />
+        <p>Ethan Sutcliffe</p>
+      </div>
+    </header>
+    <main class="flex flex-row">
+      <div class="w-2/10 border border-r-neutral-400 h-screen"></div>
+      <section class="min-h-screen"></section>
+    </main>
   </body>
 </html>
