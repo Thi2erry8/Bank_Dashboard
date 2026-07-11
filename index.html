@@ -10,7 +10,11 @@
       type="image/x-icon"
       sizes="96x96"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Bank Dashboard - HBank | devChallenges.io</title>
 
     <!--You are welcome to delete these styles or modify them in your own stylesheet -->
@@ -128,17 +132,95 @@
       $8,098
      -->
     <header
-      class="w-full border border-b-neutral-400 h-[70px] flex flex-row space-between items-center"
+      class="w-full border border-transparent border-b-neutral-400 h-[10vh] flex flex-row justify-between items-center px-8"
     >
       <img class="h-[40px]" src="./resources/hbank-logo.svg" alt="hbank-logo" />
 
       <div class="flex flex-row gap-3 items-center">
         <img src="./resources/avatar.png" alt="" />
-        <p>Ethan Sutcliffe</p>
+        <p class="text-neutral-200">Ethan Sutcliffe</p>
       </div>
     </header>
+
+    <!--MAIN-->
     <main class="flex flex-row">
-      <div class="w-2/10 border border-r-neutral-400 h-screen"></div>
+      <!--SIDEDBAR-->
+      <div
+        class="w-1/5 border border-transparent border-r-neutral-400 h-[91vh] flex flex-col justify-between"
+      >
+        <ul class="text-neutral-200 font-medium flex flex-col gap-2 pl-4 pt-4">
+          <li class="flex gap-2 font-medium">
+            <i class="ri-home-4-line"></i>
+            <p>Dashboard</p>
+          </li>
+
+          <h3 class="text-neutral-400 my-4">Analytics</h3>
+
+          <li class="flex gap-2 font-medium">
+            <i class="ri-line-chart-line"></i>
+            <p>Performance</p>
+          </li>
+
+          <li class="flex gap-2 font-medium items-center">
+            <i class="ri-focus-2-line"></i>
+            <p>Hotjar</p>
+            <span
+              class="bg-neutral-100 text-neutral-700 text-xs px-1 rounded-lg ml-14"
+              >New</span
+            >
+          </li>
+
+          <h3 class="text-neutral-400 my-4">Support</h3>
+
+          <li class="flex gap-2 font-medium items-center">
+            <i class="ri-coupon-3-line"></i>
+            <p>Tickets</p>
+            <span
+              class="bg-neutral-500 text-neutral-200 text-xs px-2 rounded-lg ml-14"
+              >18</span
+            >
+          </li>
+
+          <li class="flex gap-2 font-medium items-center">
+            <i class="ri-user-line"></i>
+            <p>Agents</p>
+          </li>
+
+          <li class="flex gap-2 font-medium items-center">
+            <i class="ri-group-line"></i>
+            <p>Customers</p>
+          </li>
+
+          <h3 class="text-neutral-400 my-4">Support</h3>
+
+          <li class="flex gap-2 font-medium items-center">
+            <i class="ri-store-line"></i>
+            <p>Product</p>
+          </li>
+
+          <li class="flex gap-2 font-medium items-center">
+            <i class="ri-shopping-basket-2-line"></i>
+            <p>Orders</p>
+          </li>
+
+          <li class="flex gap-2 font-medium items-center">
+            <i class="ri-information-line"></i>
+            <p>Reports</p>
+          </li>
+        </ul>
+
+        <div class="text-neutral-200 font-medium pl-4 pt-4">
+          <div class="flex gap-2 font-medium">
+            <i class="ri-settings-3-line"></i>
+            <p>Settings</p>
+          </div>
+
+          <div class="flex gap-2 font-medium">
+            <i class="ri-logout-box-r-line"></i>
+            <p>Logout</p>
+          </div>
+        </div>
+      </div>
       <section class="min-h-screen"></section>
     </main>
   </body>
